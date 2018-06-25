@@ -1,0 +1,15 @@
+*.class
+*.swo
+*.swp
+.DS_Store
+.svn
+.swo
+*#*
+#
+.#*
+graph.pdf
+uuid.txt
+*_flymake.*
+*.pyc
+output.html
+~$*

@@ -1,0 +1,21 @@
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	name = raphael-s
+	email = schwob.ra@gmail.com
+[format]
+	pretty = %C(blue)%h%Creset %s %C(green)%d%Creset [%C(red)%an%Creset, %C(cyan)%cr%Creset] %C(bold reverse)%N%Creset
+[core]
+	excludesfile = /Users/raphael/.gitignore
+    autocrlf = input
+    whitespace = tabwidth=4,tab-in-indent,cr-at-eol,trailing-space
+[merge]
+  	ff = false
+[branch]
+    autosetuprebase = always
+[push]
+	default = simple
+[commit]
+	gpgsign = true
