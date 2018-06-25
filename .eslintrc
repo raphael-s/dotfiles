@@ -1,0 +1,14 @@
+{
+  "extends": "eslint:recommended",
+  "env" : {
+    "node" : true,
+    "browser" : true
+  },
+  "rules": {
+      "semi": ["error", "always"]
+  },
+  "parserOptions": {
+      "sourceType": "script",
+      "ecmaVersion": 6
+  }
+}
