@@ -1,0 +1,45 @@
+#!/bin/zsh
+
+alias ll='ls -lh'
+alias lah='las -lah'
+alias e='sublime'
+alias subl='sublime'
+alias o='open'
+alias ..='cd ..'
+alias grep='grep --color'
+alias python='python2.7'
+alias py='python2.7'
+alias pip='/Users/raphael/python/python-2.7/bin/pip'
+
+alias fakemail='sudo python2.7 ~/bin/fakemail.py --host=localhost --port=25 --path=/tmp --open'
+
+alias lorem='echo "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet." | pbcopy'
+
+alias gits='git status'
+alias gitl='git log --graph'
+alias gita='git add'
+alias gitc='git commit -m'
+alias gitca='git commit --amend --no-edit'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gitp='git pull'
+alias gitf='git fetch'
+
+function pwdcp
+{
+    echo -n `pwd`/$1 | pbcopy
+}
+
+function setup
+{
+    if [ ! -f buildout.cfg ]; then
+        ln -s development.cfg buildout.cfg
+    fi
+    py bootstrap.py
+    bin/buildout
+    if [ ! $# -eq 0 ] && [ "$1" = "-s" ]; then
+        bin/instance fg
+    fi
+}
+
+alias gs='echo "sicher nid"'
