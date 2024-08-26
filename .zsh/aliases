@@ -1,17 +1,19 @@
 #!/bin/zsh
 
-alias ll='ls -lh'
-alias lah='las -lah'
-alias e='sublime'
-alias subl='sublime'
+alias ls="colorls --sd"
+alias la='colorls -lAh --sd'
+alias code='codium'
+alias e='code'
+alias c='code'
+alias subl=' /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl .'
 alias o='open'
 alias ..='cd ..'
+alias py='python'
+alias activate='source ./bin/activate'
 alias grep='grep --color'
-alias python='python2.7'
-alias py='python2.7'
-alias pip='/Users/raphael/python/python-2.7/bin/pip'
 
-alias fakemail='sudo python2.7 ~/bin/fakemail.py --host=localhost --port=25 --path=/tmp --open'
+alias dc='docker compose -d'
+alias dcu='docker compose up -d --build'
 
 alias lorem='echo "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet." | pbcopy'
 
@@ -24,22 +26,11 @@ alias gco='git checkout'
 alias gcb='git checkout -b'
 alias gitp='git pull'
 alias gitf='git fetch'
+alias gitd='git diff'
+
+alias src='source ~/.zshrc'
 
 function pwdcp
 {
     echo -n `pwd`/$1 | pbcopy
 }
-
-function setup
-{
-    if [ ! -f buildout.cfg ]; then
-        ln -s development.cfg buildout.cfg
-    fi
-    py bootstrap.py
-    bin/buildout
-    if [ ! $# -eq 0 ] && [ "$1" = "-s" ]; then
-        bin/instance fg
-    fi
-}
-
-alias gs='echo "sicher nid"'

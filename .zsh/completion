@@ -12,7 +12,7 @@ zstyle ':completion:*' insert-tab pending
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' menu select=1
 zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
-zstyle :compinstall filename '/Users/senny/.zshrc'
+zstyle :compinstall filename '/Users/mac01/.zshrc'
 
 # End of lines added by compinstall
 
