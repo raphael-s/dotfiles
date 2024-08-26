@@ -1,0 +1,40 @@
+{
+    "workbench.colorTheme": "Atom One Dark",
+    "editor.mouseWheelScrollSensitivity": 0.6,
+    "editor.fontSize": 18,
+    "workbench.startupEditor": "none",
+    "explorer.confirmDelete": false,
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "window.restoreWindows": "none",
+    "terminal.integrated.fontSize": 14,
+    "explorer.compactFolders": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "git.confirmSync": false,
+    "redhat.telemetry.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.associations": {
+        "*.overrides": "less",
+        "*.variables": "less"
+    },
+    "debug.console.fontSize": 16,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.formatOnSave": true
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "material-product-icons",
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "mblode.pretty-formatter"
+    },
+    "[less]": {
+        "editor.defaultFormatter": "mblode.pretty-formatter"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "hediet.vscode-drawio.resizeImages": null
+}
