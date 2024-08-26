@@ -8,9 +8,10 @@
 [format]
 	pretty = %C(blue)%h%Creset %s %C(green)%d%Creset [%C(red)%an%Creset, %C(cyan)%cr%Creset] %C(bold reverse)%N%Creset
 [core]
-	excludesfile = /Users/raphael/.gitignore
+	excludesfile = /Users/mac01/.gitignore
     autocrlf = input
     whitespace = tabwidth=4,tab-in-indent,cr-at-eol,trailing-space
+	editor = nano
 [merge]
   	ff = false
 [branch]
@@ -19,3 +20,5 @@
 	default = simple
 [commit]
 	gpgsign = true
+[init]
+	defaultBranch = main
