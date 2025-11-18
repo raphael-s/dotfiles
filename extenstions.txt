@@ -1,0 +1,30 @@
+Atomize (atom One Dark theme)
+Auto Close Tag
+autoDocstring
+autopep8
+Better TOML
+Container Tools
+Docker
+Docx Renderer
+Draw.io Integration
+ES7+ React/Redux/React-Native snippets
+GitHub Pull Requests
+HTML CSS Support
+HTML-validate
+Markdown PDF
+Material Icon Theme
+Material Product Icons
+MJML
+Playwright Test for CSCode
+pre-commit
+Python
+Python Debugger
+Python Indent
+Rainbow CSV
+Ruff
+SQLite
+SVG
+vscode-pdf
+XML
+ZCML language configuration
+Makefile Tools

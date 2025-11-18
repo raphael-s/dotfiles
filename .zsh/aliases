@@ -5,11 +5,11 @@ alias la='colorls -lAh --sd'
 alias code='codium'
 alias e='code'
 alias c='code'
-alias subl=' /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl .'
 alias o='open'
 alias ..='cd ..'
 alias py='python'
 alias activate='source ./bin/activate'
+alias venv='source ./.venv/bin/activate'
 alias grep='grep --color'
 
 alias dc='docker compose -d'
@@ -34,3 +34,5 @@ function pwdcp
 {
     echo -n `pwd`/$1 | pbcopy
 }
+
+alias hermes='cd ~/projects/hermes'
