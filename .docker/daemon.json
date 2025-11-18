@@ -1,12 +1,12 @@
 {
- "builder": {
-  "features": {
-   "buildkit": true
+  "builder": {
+    "features": {
+      "buildkit": true
+    },
+    "gc": {
+      "defaultKeepStorage": "20GB",
+      "enabled": true
+    }
   },
-  "gc": {
-   "defaultKeepStorage": "20GB",
-   "enabled": true
-  }
- },
- "experimental": false
+  "experimental": false
 }

@@ -1,0 +1,45 @@
+{
+  "schemes" : [
+    {
+      "if" : {
+        "device" : {
+          "vendorID" : "0x46d",
+          "category" : "mouse",
+          "productName" : "MX Master 3S",
+          "productID" : "0xb034",
+          "serialNumber" : "8883C4F5"
+        }
+      },
+      "scrolling" : {
+        "reverse" : {
+          "horizontal" : true
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0,
+        "disableAcceleration" : false,
+        "speed" : 0.35
+      },
+      "buttons" : {
+        "mappings" : [
+
+        ],
+        "universalBackForward" : true
+      }
+    },
+    {
+      "scrolling" : {
+        "reverse" : true
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x0",
+          "category" : "trackpad",
+          "productID" : "0x0",
+          "productName" : "Apple Internal Keyboard \/ Trackpad"
+        }
+      }
+    }
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.2"
+}

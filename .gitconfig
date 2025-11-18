@@ -1,24 +1,27 @@
-[filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
 [user]
-	name = raphael-s
 	email = schwob.ra@gmail.com
-[format]
-	pretty = %C(blue)%h%Creset %s %C(green)%d%Creset [%C(red)%an%Creset, %C(cyan)%cr%Creset] %C(bold reverse)%N%Creset
+	name = Raphael Schwob
+
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
 [core]
 	excludesfile = /Users/mac01/.gitignore
-    autocrlf = input
-    whitespace = tabwidth=4,tab-in-indent,cr-at-eol,trailing-space
 	editor = nano
+	autocrlf = input
+	whitespace = tabwidth=4,tab-in-indent,cr-at-eol,trailing-space
+[format]
+	pretty = %C(blue)%h%Creset %s %C(green)%d%Creset [%C(red)%an%Creset, %C(cyan)%cr%Creset] %C(bold reverse)%N%Creset
 [merge]
   	ff = false
 [branch]
     autosetuprebase = always
 [push]
 	default = simple
-[commit]
-	gpgsign = true
-[init]
-	defaultBranch = main
+	autoSetupRemote = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
