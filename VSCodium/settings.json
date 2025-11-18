@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Atom One Dark",
+    "workbench.colorTheme": "Atomize",
     "editor.mouseWheelScrollSensitivity": 0.6,
     "editor.fontSize": 18,
     "workbench.startupEditor": "none",
@@ -11,10 +11,9 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "git.openRepositoryInParentFolders": "never",
     "git.confirmSync": false,
     "redhat.telemetry.enabled": true,
-    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.ignoreTrimWhitespace": true,
     "files.associations": {
         "*.overrides": "less",
         "*.variables": "less"
@@ -32,9 +31,22 @@
     "[javascript]": {
         "editor.defaultFormatter": "mblode.pretty-formatter"
     },
-    "[less]": {
-        "editor.defaultFormatter": "mblode.pretty-formatter"
-    },
     "explorer.confirmDragAndDrop": false,
-    "hediet.vscode-drawio.resizeImages": null
+    "hediet.vscode-drawio.resizeImages": null,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "chat.commandCenter.enabled": false,
+    "githubPullRequests.pullBranch": "never",
+    "githubPullRequests.fileListLayout": "tree",
+    "workbench.editorAssociations": {
+        "*.sql": "default"
+    },
+    "githubLocalActions.dockerDesktopPath": "/Applications/Docker.app",
+    "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+    "git.openRepositoryInParentFolders": "always",
+    "window.newWindowProfile": "Default",
 }
